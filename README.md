@@ -13,4 +13,3 @@ O sistema é composto pelas seguintes tabelas:
 - consultas
 - receitas
 - pagamentos
-Cada tabela possui relações bem definidas por chaves estrangeiras, garantindo a integridade referencial dos dados.
