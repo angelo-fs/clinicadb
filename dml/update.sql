@@ -1,4 +1,4 @@
--- Atualiza o status do agendamento para 'Concluído'
+-- Atualiza o status do agendamento para concluído
 UPDATE agendamentos
 SET status = 'Concluído'
 WHERE id_agendamento = 1001;
