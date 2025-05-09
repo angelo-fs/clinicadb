@@ -1,1 +1,1 @@
-# Cliníca Especializada - Banco de Dados
+# Clínica Especializada - Banco de Dados
