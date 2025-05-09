@@ -23,3 +23,68 @@ INSERT INTO receitas (id_receita, id_consulta, medicamento, dosagem, duracao) VA
 (8, 8, 'Consulta não realizada', 'Sem receita', '0 dias'),
 (9, 9, 'Metformina', '850mg, 2x ao dia', 'indeterminado'),
 (10, 10, 'Atorvastatina', '10mg, 1x ao dia', '90 dias');
+
+-- Consultas
+INSERT INTO consultas (id_consulta, id_agendamento, observacoes) VALUES
+(1, 1001, 'Paciente com sintomas de gripe leve.'),
+(2, 1002, 'Retorno pós-cirurgia. Cicatrização boa.'),
+(3, 1003, 'Consulta cancelada pelo paciente.'),
+(4, 1004, 'Avaliação de pressão arterial.'),
+(5, 1005, 'Exame de rotina. Sem alterações.'),
+(6, 1006, 'Paciente relatou dores lombares.'),
+(7, 1007, 'Acompanhamento de tratamento para ansiedade.'),
+(8, 1008, 'Consulta não realizada. Médico ausente.'),
+(9, 1009, 'Revisão de exames laboratoriais.'),
+(10, 1010, 'Primeira consulta. Paciente com histórico familiar de diabetes.');
+
+-- Agendamentos
+INSERT INTO agendamentos (id_paciente, id_medico, id_agendamento, status) VALUES
+(1, 1, 1001, 'Agendado'),
+(2, 2, 1002, 'Concluído'),
+(3, 1, 1003, 'Cancelado'),
+(4, 3, 1004, 'Agendado'),
+(5, 4, 1005, 'Concluído'),
+(6, 2, 1006, 'Agendado'),
+(7, 5, 1007, 'Agendado'),
+(8, 3, 1008, 'Cancelado'),
+(9, 4, 1009, 'Concluído'),
+(10, 1, 1010, 'Agendado');
+
+-- Pagamentos
+INSERT INTO pagamentos (id_pagamento, id_consulta, valor, forma_pagamento, data_pagamento) VALUES
+(1, 1, 150.00, 'Cartão de Crédito', '2025-05-01'),
+(2, 2, 200.00, 'Dinheiro', '2025-05-02'),
+(3, 3, 0.00, 'Consulta cancelada', NULL),
+(4, 4, 120.00, 'PIX', '2025-05-03'),
+(5, 5, 130.00, 'Cartão de Débito', '2025-05-04'),
+(6, 6, 180.00, 'Cartão de Crédito', '2025-05-04'),
+(7, 7, 250.00, 'Plano de Saúde', '2025-05-05'),
+(8, 8, 0.00, 'Consulta não realizada', NULL),
+(9, 9, 160.00, 'PIX', '2025-05-06'),
+(10, 10, 190.00, 'Cartão de Crédito', '2025-05-07');
+
+-- Médicos
+INSERT INTO medicos (id_medico, nome, crm) VALUES
+(1, 'Dra. Maísa', '123456-SP'),
+(2, 'Dr. João Luis', '473246-RJ'),
+(3, 'Dr. Pedro', '3218746-MG'),
+(4, 'Dra. Maria', '192839-CE'),
+(5, 'Dr. Soares', '123876-PE'),
+(6, 'Dra. Helena', '128357-AM'),
+(7, 'Dr. Paulo', '968585-RR'),
+(8, 'Dr. Danilo', '138473-PI'),
+(9, 'Dr. Rios', '437283-MA'),
+(10, 'Dra. Luiza', '447348-RS');
+
+-- Especialidades
+INSERT INTO especialidades (id_especialidades, nome) VALUES
+(1, 'Cardiologia'),
+(2, 'Oncologia'),
+(3, 'Clínico Geral'),
+(4, 'Dermatologia'),
+(5, 'Oftalmologia'),
+(6, 'Pediatria'),
+(7, 'Neurologia'),
+(8, 'Psiquiatria'),
+(9, 'Endocrinologia'),
+(10, 'Infectologia');
