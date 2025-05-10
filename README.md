@@ -22,3 +22,7 @@ https://www.youtube.com/watch?v=f8NAl3THzOg
 
 ## **Modelo Lógico**
 ![image](https://github.com/user-attachments/assets/e1eadad4-c6ea-4086-aa70-c5f978fbe5cd)
+
+## 🐱‍👤 **Aluno**
+- Ângelo Antônio de Souza
+- Engenharia de Software
