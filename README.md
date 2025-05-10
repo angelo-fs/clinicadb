@@ -13,3 +13,6 @@ O sistema é composto pelas seguintes tabelas:
 - consultas
 - receitas
 - pagamentos
+
+## ▶️ **Link do vídeo** 
+https://www.youtube.com/watch?v=f8NAl3THzOg
